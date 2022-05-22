@@ -1,0 +1,14 @@
+.profile {
+    width: 350px;
+    height: auto;
+    
+}
+
+.description img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: bisque;
+
+}

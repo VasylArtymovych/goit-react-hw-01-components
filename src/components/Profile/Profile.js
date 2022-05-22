@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import s from './Profile.module.css';
 
 export default function profile(props){
     const {username, tag, location, avatar, stats:{followers, views, likes}} = props;
     return (
-        <div className="profile">
-            <div className="description">
+        <div className={s.profile}>
+            <div className={s.description}>
                 <img
                 src={avatar}
                 alt="User avatar"
