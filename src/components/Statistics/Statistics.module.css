@@ -1,0 +1,42 @@
+.section {
+    box-sizing: border-box;
+    padding: 5px 5px;
+    width: 350px;
+}
+
+.title {
+    font-size: 24px;
+    color: grey;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
+.item {
+    flex-basis: calc(100%/5);
+    
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.span {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+.label {
+    composes: span;
+    font-size: 12px;
+
+}
+
+.percentage {
+    composes: span;
+    font-size: 20px;
+}

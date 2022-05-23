@@ -11,23 +11,23 @@ export default function profile(props){
                 alt="User avatar"
                 className="avatar"
                 />
-                <p className="name">{username}</p>
-                <p className="tag">{tag}</p>
-                <p className="location">{location}</p>
+                <p className={s.name}>{username}</p>
+                <p className={s.tag}>@{tag}</p>
+                <p className={s.location}>{location}</p>
             </div>
 
-            <ul className="stats">
+            <ul className={s.stats}>
                 <li>
-                <span className="label">followers</span>
-                <span className="quantity">{followers}</span>
+                <span className={s.label}>followers</span>
+                <span className={s.quantity}>{followers}</span>
                 </li>
                 <li>
-                <span className="label">Views</span>
-                <span className="quantity">{views}</span>
+                <span className={s.label}>Views</span>
+                <span className={s.quantity}>{views}</span>
                 </li>
                 <li>
-                <span className="label">Likes</span>
-                <span className="quantity">{likes}</span>
+                <span className={s.label}>Likes</span>
+                <span className={s.quantity}>{likes}</span>
                 </li>
             </ul>
         </div>
