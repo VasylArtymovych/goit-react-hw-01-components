@@ -3,7 +3,7 @@ import s from './FriendList.module.css';
 
 export default function friendList({data}) {
     return (
-    <ul className="friend-list">
+    <ul className={s.list}>
         {data.map(({avatar, name, isOnline, id}) => (
             <li className={s.item } key={id}>
                 <span className={s.status} style={ isOnline ? {backgroundColor: 'green'} : {backgroundColor: 'red'} }></span>
